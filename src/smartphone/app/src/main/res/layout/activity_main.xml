@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBB26A"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/myToolBar"
+        layout="@layout/activity_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/functionsHorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CBB26A"
+        app:layout_constraintTop_toBottomOf="@+id/myToolBar">
+
+        <LinearLayout
+            android:id="@+id/functionsLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:contextClickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/markText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/point_30"
+                android:drawablePadding="3dp"
+                android:text="Mark field"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/recordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/gps_30"
+                android:drawablePadding="3dp"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:text="Record"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <!-- For the function MarkFields  -->
+
+            <TextView
+                android:id="@+id/addMarkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/add_30"
+                android:drawablePadding="3dp"
+                android:text="Add"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/saveMarkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/save_30"
+                android:drawablePadding="3dp"
+                android:text="Save"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ordersMarkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners"
+                android:padding="9dp"
+                android:text="/4 markers"
+                android:textColor="#522209"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cancelMarkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/cancel_30"
+                android:drawablePadding="3dp"
+                android:text="Cancel"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <!-- For the function Record -->
+
+            <TextView
+                android:id="@+id/saveRecordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/save_30"
+                android:drawablePadding="3dp"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/startRecordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/start_30"
+                android:drawablePadding="3dp"
+                android:text="Start recording"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/stopRecordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/stop_30"
+                android:drawablePadding="3dp"
+                android:text="Stop recording"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cancelRecordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_dark"
+                android:padding="9dp"
+                android:drawableLeft="@drawable/cancel_30"
+                android:drawablePadding="3dp"
+                android:text="Cancel"
+                android:textColor="#CBB26A"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/functionsHorizontalScrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

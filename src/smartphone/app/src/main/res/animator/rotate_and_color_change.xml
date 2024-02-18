@@ -1,0 +1,17 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="360"
+        android:duration="1000"
+        android:repeatCount="infinite"
+        android:interpolator="@android:anim/linear_interpolator"/>
+
+    <objectAnimator
+        android:propertyName="textColor"
+        android:valueFrom="#CBB26A"
+        android:valueTo="#FF0000"
+        android:duration="1000"
+        android:repeatCount="infinite"
+        android:interpolator="@android:anim/linear_interpolator"/>
+</set>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "670702985927",
+    "project_id": "orgoma",
+    "storage_bucket": "orgoma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670702985927:android:e3b1e99b5eb870c4f294e2",
+        "android_client_info": {
+          "package_name": "com.example.orgoma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670702985927-q7iu3h99bsud1hap3g4111ahk14bmbcg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.orgoma",
+            "certificate_hash": "ef64a8431c10a4d5a439205bf269e3222bc1767b"
+          }
+        },
+        {
+          "client_id": "670702985927-7lsadkuo6gjdl60r1g384sdvpg9kqeal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJW-d9jIG7O93yHKr0ktcQmkzAohaAI38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670702985927-7lsadkuo6gjdl60r1g384sdvpg9kqeal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
